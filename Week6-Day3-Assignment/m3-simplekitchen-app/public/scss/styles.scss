@@ -1,0 +1,182 @@
+@import "colors";
+@import "nav.scss";
+
+
+/* Variables */
+$fontFamily1: Arial, Helvetica, Sans-Serif;
+$fontFamily2: 'Sacramento', cursive;
+$fontSizeH1: 3em;
+$fontSizeH2: 2.5em;
+$fontSizeH3: 2em;
+$fontSizeSmall: 0.85em;
+
+html {
+    // Operations
+    font-size: 0.8em + 0.2;           //1 
+    width: ( 100% / 2) + 50%      //75;
+}
+
+body{
+    font-family: $fontFamily1;
+    background: $backgroundColor1;
+}
+
+header {
+    height: 50px;
+    width: 1350px;
+    margin: 0.8em auto 1em auto;
+}
+
+/* Nest Main */
+main {
+    background: $mainColor;
+    width: 1350px;
+    min-height:535px;
+    padding: 1.5%;
+    margin: 0 auto;
+
+    #intro-image {
+      float: left;
+      width: 800px;
+
+      img {
+        width: 800px;
+      }
+    }
+
+    #intro-register{
+        h3{
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        label{
+            font-size: 14px;
+        }
+        input{
+            height: 20px;
+        }
+        button{
+            color: $color4;
+            width: 100px;
+            height: 40px;
+            background: $backgroundColor1;
+            margin: 0 auto;
+        }
+    }
+
+    #intro-thank{
+        h3{
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+
+    #intro-text {
+      width: 550px;
+      height: 407px;
+      float:left;
+      background: $sectionColor;
+      text-align: center;
+      padding-top: 8em;
+
+      h3 {
+        font-size: $fontSizeH3;
+        color: $color3;
+      }
+
+      span {
+        font-family: $fontFamily2;
+        font-size: 2em;
+      }
+    }
+}
+/*
+body {
+	padding: 40px 10px;
+	background-color: #eee;
+}*/
+.listing-req {
+	h1 {
+		text-align: center;
+		margin: 0 0 2rem;
+	}
+}
+.form-registration {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	input {
+		width: 100%;
+		margin: 0px 0 10px;
+	}
+	.btn {
+		flex: 1 0 100%;
+	}
+}
+.my-errors {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	color: #333;
+	font-size: 1.2rem;
+	display: table;
+	li {
+		margin: 0 0 1rem;
+		&:before {
+			content: "! Error: ";
+			color: #f00;
+			font-weight: bold;
+		}
+	}
+}
+.listing-table {
+	width: 100%;
+	th {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		background: #000;
+		color: #fff;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+	td {
+		padding: 10px;
+		border-bottom: 1px solid #666;
+		&:first-child {
+			border-right: 1px solid #666;
+		}
+	}
+}
+
+footer {
+    width: 1350px;
+    margin: 2em auto;
+    padding-left: 80px;
+    font-size: $fontSizeSmall;
+}
+
+button {
+    color: $color4;
+    width: 100px;
+    height: 40px;
+    background: $backgroundColor1;
+    margin-top: 2em;
+}
+.register-button{
+    color: $color4;
+    width: 100px;
+    height: 30px;
+    background: $backgroundColor1;
+    margin-top: 1em;
+    float: right;
+}
+.submit-buttton {
+    @extend button;
+    border: 1px $color3;
+}
+
